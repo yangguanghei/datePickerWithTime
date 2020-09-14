@@ -16,6 +16,7 @@
 		1839B200250F24130019DC75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839B1FF250F24130019DC75 /* main.m */; };
 		1839B20A250F24130019DC75 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839B209250F24130019DC75 /* _____Tests.m */; };
 		1839B215250F24130019DC75 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839B214250F24130019DC75 /* _____UITests.m */; };
+		243F5DF58549EDFB6E302DE1 /* libPods-时间选择器.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A976AEA578B9D1AF2A8E49 /* libPods-时间选择器.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,11 +50,14 @@
 		1839B1FE250F24130019DC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1839B1FF250F24130019DC75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1839B205250F24130019DC75 /* 时间选择器Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "时间选择器Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1839B209250F24130019DC75 /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
+		1839B209250F24130019DC75 /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _____Tests.m; sourceTree = "<group>"; };
 		1839B20B250F24130019DC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1839B210250F24130019DC75 /* 时间选择器UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "时间选择器UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1839B214250F24130019DC75 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
+		1839B214250F24130019DC75 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _____UITests.m; sourceTree = "<group>"; };
 		1839B216250F24130019DC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73A976AEA578B9D1AF2A8E49 /* libPods-时间选择器.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-时间选择器.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3CF7177C6F3EA64161DDDDB /* Pods-时间选择器.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-时间选择器.debug.xcconfig"; path = "Target Support Files/Pods-时间选择器/Pods-时间选择器.debug.xcconfig"; sourceTree = "<group>"; };
+		F08F62248218A6DEE8D2D850 /* Pods-时间选择器.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-时间选择器.release.xcconfig"; path = "Target Support Files/Pods-时间选择器/Pods-时间选择器.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243F5DF58549EDFB6E302DE1 /* libPods-时间选择器.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,8 @@
 				1839B208250F24130019DC75 /* 时间选择器Tests */,
 				1839B213250F24130019DC75 /* 时间选择器UITests */,
 				1839B1EB250F24110019DC75 /* Products */,
+				43236BDBB7DFE547C32C0E06 /* Pods */,
+				5705441C90DAFFFF5264177F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +144,24 @@
 			path = "时间选择器UITests";
 			sourceTree = "<group>";
 		};
+		43236BDBB7DFE547C32C0E06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3CF7177C6F3EA64161DDDDB /* Pods-时间选择器.debug.xcconfig */,
+				F08F62248218A6DEE8D2D850 /* Pods-时间选择器.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5705441C90DAFFFF5264177F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73A976AEA578B9D1AF2A8E49 /* libPods-时间选择器.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1839B219250F24130019DC75 /* Build configuration list for PBXNativeTarget "时间选择器" */;
 			buildPhases = (
+				19C9D0035CEEE56E6FF50D2E /* [CP] Check Pods Manifest.lock */,
 				1839B1E6250F24110019DC75 /* Sources */,
 				1839B1E7250F24110019DC75 /* Frameworks */,
 				1839B1E8250F24110019DC75 /* Resources */,
+				0EA66365A3AECB107BFFD87D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +288,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA66365A3AECB107BFFD87D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-时间选择器/Pods-时间选择器-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-时间选择器/Pods-时间选择器-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-时间选择器/Pods-时间选择器-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19C9D0035CEEE56E6FF50D2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-时间选择器-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1839B1E6250F24110019DC75 /* Sources */ = {
@@ -437,6 +506,7 @@
 		};
 		1839B21A250F24130019DC75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3CF7177C6F3EA64161DDDDB /* Pods-时间选择器.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +524,7 @@
 		};
 		1839B21B250F24130019DC75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F08F62248218A6DEE8D2D850 /* Pods-时间选择器.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
